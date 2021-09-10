@@ -23,6 +23,7 @@
       src="https://kit.fontawesome.com/36543f2abe.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -36,21 +37,33 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">PING.</h1>
+      <h1 class="header__title">
+        PING<span class="header__title--dot">.</span>
+      </h1>
     </header>
     <main>
       <section class="main-section">
         <header class="main-section__header">
-          <h1 class="main-section__title">We are launching soon!</h1>
+          <h1 class="main-section__title">
+            We are launching
+            <strong class="main-section__title--strong">soon!</strong>
+          </h1>
           <p class="main-section__description">Subscribe and get notified</p>
         </header>
         <form class="subscribe-form">
-          <input
-            class="subscribe-form__input"
-            type="email"
-            placeholder="Your email address..."
-          />
-          <button class="subscribe-form__button">Notify Me</button>
+          <div class="subscribe-form__mail-container">
+            <input
+              class="subscribe-form__input"
+              type="email"
+              placeholder="Your email address..."
+            />
+            <span class="warning-text"
+              >Please provide a valid email address</span
+            >
+          </div>
+          <button class="subscribe-form__button" type="button">
+            Notify Me
+          </button>
         </form>
       </section>
       <div class="main-img">
@@ -60,17 +73,23 @@
         />
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <nav>
         <ul class="social-links">
-          <li class="social-links__link">
-            <a href=""><i class="fab fa-facebook-f"></i></a>
+          <li>
+            <a class="social-links__link" href=""
+              ><i class="fab fa-facebook-f"></i
+            ></a>
           </li>
-          <li class="social-links__link">
-            <a href=""><i class="fab fa-twitter"></i></a>
+          <li>
+            <a class="social-links__link" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
           </li>
-          <li class="social-links__link">
-            <a href=""><i class="fab fa-instagram"></i></a>
+          <li>
+            <a class="social-links__link" href=""
+              ><i class="fab fa-instagram"></i
+            ></a>
           </li>
         </ul>
       </nav>
