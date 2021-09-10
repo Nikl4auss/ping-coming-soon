@@ -28,7 +28,8 @@ let warningText = () => {
 let isValid = (email) => {
   if (!validateEmail(email)) {
     let warning = warningText();
-    if (!emailContainer.contains(warning)) {
+
+    if (!emailContainer.querySelector(".warning-text")) {
       emailContainer.append(warning);
       emailInput.classList.add("subscribe-form__input--warning");
     }
