@@ -39,7 +39,7 @@ body {
   justify-content: space-evenly;
   width: 100%;
   min-width: 320px;
-  max-width: 768px;
+  max-width: 600px;
   height: 200px;
   margin: 50px auto;
 }
@@ -67,7 +67,8 @@ body {
   gap: 30px;
   width: 100%;
   min-width: 320px;
-  max-width: 768px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .subscribe-form__mail-container {
   display: flex;
@@ -172,6 +173,23 @@ nav .social-links__link:hover {
   font-size: 1rem;
   font-weight: 300;
   color: #ff5263;
+}
+
+@media (min-width: 768px) {
+  .subscribe-form {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+  }
+  .subscribe-form__mail-container {
+    flex-grow: 2;
+    width: 60%;
+  }
+  .subscribe-form__button {
+    flex-grow: 1;
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
